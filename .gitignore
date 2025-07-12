@@ -1,0 +1,201 @@
+# ============================================
+# Unity 스마트 계류줄 관리 시스템
+# .gitignore 파일 (최적화 버전)
+# ============================================
+
+# Unity 자동 생성 파일 및 폴더 (필수 제외)
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/
+
+# Unity 패키지 관리 파일
+[Pp]ackages/
+manifest.json
+packages-lock.json
+
+# Unity 에디터 관련 파일
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Unity 크래시 로그 및 시스템 정보
+sysinfo.txt
+crashlytics-build.properties
+
+# Unity 빌드 결과물
+*.apk
+*.aab
+*.unitypackage
+*.app
+*.exe
+*.x86_64
+*.x86
+
+# ============================================
+# 개발 도구 관련 파일
+# ============================================
+
+# Visual Studio
+.vs/
+*.user
+*.pidb
+*.booproj
+*.sln
+*.csproj
+*.unityproj
+*.suo
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.svd
+*.pdb
+*.mdb
+*.opendb
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# ============================================
+# 운영체제별 시스템 파일
+# ============================================
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# ============================================
+# 스마트 계류줄 프로젝트 특화 설정
+# ============================================
+
+# 테스트 데이터 및 실험 결과
+TestData/
+ExperimentResults/
+TensionData/
+AnalysisResults/
+*.log
+*.csv
+
+# 임시 스크린샷 및 비디오 (문서용 제외)
+Screenshots/
+RecordedVideos/
+*.png
+*.jpg
+*.mp4
+*.gif
+
+# 하지만 문서용 이미지는 포함
+!Documentation/Images/*.png
+!Documentation/Images/*.jpg
+!README_Images/*.png
+!README_Images/*.jpg
+
+# 개발자 개인 설정 및 백업
+PersonalSettings/
+*.personal
+*.backup
+*.bak
+
+# ============================================
+# 성능 및 프로파일링 관련 파일
+# ============================================
+
+# Unity Profiler 데이터
+*.data
+ProfilerData/
+
+# Unity Analytics
+UnityAnalytics/
+
+# Unity Cloud Build
+cloudbuild/
+
+# ============================================
+# 보안 관련 파일 (중요!)
+# ============================================
+
+# API 키 및 인증 정보
+*.key
+*.pem
+*.p12
+config.json
+secrets.json
+
+# 환경 변수 파일
+.env
+.env.local
+.env.production
+
+# ============================================
+# 협업 도구 관련
+# ============================================
+
+# Plastic SCM
+.plastic/
+
+# Perforce
+.p4ignore
+
+# Unity Collaborate
+.collabignore
+
+# ============================================
+# 에셋 관련 설정
+# ============================================
+
+# Asset Store Tools
+[Aa]ssets/AssetStoreTools*
+
+# 대용량 에셋 파일 (필요시 Git LFS 사용)
+# *.fbx
+# *.obj
+# *.3ds
+# *.blend
+# *.wav
+# *.mp3
+# *.ogg
+
+# 하지만 프로젝트 필수 에셋은 포함
+!Assets/Models/Ship.fbx
+!Assets/Models/Dock.fbx
+!Assets/Audio/AlertSounds/*.wav
+
